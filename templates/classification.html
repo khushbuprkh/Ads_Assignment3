@@ -1,0 +1,77 @@
+<DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+	<body>
+	<div class="container">
+
+		<h2>Classification-Team9</h2>
+		<form method="POST" ation="/send">
+	<div class="dropdown2">
+	<h3><label for="sel2">Delinquency Status:</label></h3>
+    	<select name="DelinquencyStatus">
+			<option value="0">0</option>
+			<option value="1">1</option>
+		</select>
+  </div>
+        <div class="form-group">
+			<b>Loan Age:</b>	<input type="text" name="LoanAge" class="form-control"></br>
+        </div>
+		<div class="form-group">
+			<b>Current Interest Rate:</b>	<input type="text" name="CurrentInterestRate" class="form-control"></br>
+		</div>
+		<div class="form-group">
+			<b>Actual Loss Calculation:</b>	<input type="text" name="ActualLossCalculation" class="form-control"></br>
+		</div>
+		<div class="form-group">
+			<b>Modification Cost:</b>	<input type="text" name="ModificationCost" class="form-control"></br>
+		</div>
+<div class="dropdown2">
+        <h3><label for="sel2">Repurchase Flag:</label></h3>
+        <select name="RepurchaseFlag">
+                        <option value="Y">Y</option>
+                        <option value="N">N</option>
+                </select>
+  </div>
+<table class="table">
+    <tbody>
+      <tr>
+        <td><input class="btn btn-primary" type="submit" name="submit" value="logisticRegression"></td>
+        <td><input class="btn btn-primary" type="submit" name="submit" value="randomForest"></td>
+        <td><input class="btn btn-primary" type="submit" name="submit" value="neuralNetwork"></td>
+      </tr>
+    </tbody>
+  </table>
+		<br/>		
+		</form>
+		</br>
+
+{% if Status is defined %}
+<div>
+<table class="table">
+    <thead>
+      <tr>
+        <th>OriginalDelinquencyStatus</th>
+        <th>Predicted Result</th>
+      </tr>
+    </thead>
+ <tbody>
+
+{% for key, value in Status.items() %}
+        {% for k, v in value.items() %}
+                 {% for items in v %}
+                <td> {{items['DelinquencyStatus']}} </td>
+                <td> {{items['Scored Labels']}} </td>
+                 {% endfor %}
+        {% endfor %}
+
+{% endfor %}
+{% endif %}
+</tbody>
+</table>
+</div>
+ </div>
+	</body>
+</html>
+

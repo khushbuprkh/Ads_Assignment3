@@ -1,0 +1,155 @@
+<DOCTYPE html>
+<html>
+	<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	</head>
+	<body>
+	<div class="container">
+
+		<h2>Prediction-Team9</h2>
+		<form method="POST" ation="/send">
+		<div class="form-group">
+		    <b>Original Interest Rate:</b>	<input type="text" name="OriginalInterestRate" class="form-control"></br>
+		</div>
+  <div class="dropdown">
+	<h3><label for="sel1">First Time Home Buyer Flag:</label></h3>
+    	<select name="FirstTimeHomeBuyerFlag">
+			<option value="N">N</option>
+			<option value="Y">Y</option>
+			<option value="X">X</option>
+		</select>
+        </div>
+  <div class="dropdown">
+        <h3><label for="sel1">Channel:</label></h3>
+        <select name="Channel">
+                        <option value="B">B</option>
+                        <option value="R">R</option>
+                        <option value="C">C</option>
+			<option value="T">T</option>
+                </select>
+        </div>
+
+<div class="dropdown">
+        <h3><label for="sel1">Servicer Name:</label></h3>
+	        <select name="ServicerName">
+                       <option value="ABNAMROMTGEGROUP,INC">ABNAMROMTGEGROUP,INC</option>
+<option value="ALLYBANK" >ALLYBANK</option>
+<option value="AMERIHOMEMTGECOMPANY">AMERIHOMEMTGECOMPANY</option>
+<option value="AMTRUSTBANK">AMTRUSTBANK</option>
+<option value="ARVESTCENTRALMTGECO"> ARVESTCENTRALMTGECO</option>
+<option value="BACHOMELOANSERVICING">BACHOMELOANSERVICING</option>
+<option value="BANKOFAMERICA,NA">BANKOFAMERICA,NA</option>
+<option value="BRANCHBANKING&amp;TRUSTC">BRANCHBANKING&amp;TRUSTC</option>
+<option value="CALIBERHOMELOANS,INC">CALIBERHOMELOANS,INC</option>
+<option value="CENTRALMTGECO">CENTRALMTGECO</option>
+<option value="CITIMORTGAGE,INC">CITIMORTGAGE,INC</option>
+<option value="COLONIALSAVINGS,FA">COLONIALSAVINGS,FA</option>
+<option value="COLORADOFEDSAVINGSBA">COLORADOFEDSAVINGSBA</option>
+<option value="COUNTRYWIDE">COUNTRYWIDE</option>
+<option value="DITECHFINANCIALLLC">DITECHFINANCIALLLC</option>
+<option value="FIFTHTHIRDBANK">FIFTHTHIRDBANK</option>
+<option value="FIFTHTHIRDMTGECO">FIFTHTHIRDMTGECO</option>
+<option value="FIRSTKEYMTGELLC">FIRSTKEYMTGELLC</option>
+<option value="FLAGSTARBANK,FSB">FLAGSTARBANK,FSB</option>
+<option value="FLAGSTARCAPITALMARKE">FLAGSTARCAPITALMARKE</option>
+<option value="FRANKLINAMERICANMTGE">FRANKLINAMERICANMTGE</option>
+<option value="FREEDOMMTGECORP">FREEDOMMTGECORP</option>
+<option value="FREMONTBANK">FREMONTBANK</option>
+<option value="GMACMORTGAGE,LLC">GMACMORTGAGE,LLC</option>
+<option value="IMPACMTGECORP">IMPACMTGECORP</option>
+<option value="JPMORGANCHASEBANK,NA">JPMORGANCHASEBANK,NA</option>
+<option value="LAKEVIEWLOANSERVICIN">LAKEVIEWLOANSERVICIN</option>
+<option value="LOANDEPOTCOM,LLC">LOANDEPOTCOM,LLC</option>
+<option value="MARIXSERVICINGLLC">MARIXSERVICINGLLC</option>
+<option value="MATRIXFINANCIALSERVI">MATRIXFINANCIALSERVI</option>
+<option value="METLIFEHOMELOANS,ADI">METLIFEHOMELOANS,ADI</option>
+<option value="NATIONSTARMTGELLC">NATIONSTARMTGELLC</option>
+<option value="NATLCITYMTGECO">NATLCITYMTGECO</option>
+<option value="OCWENLOANSERVICING,L">OCWENLOANSERVICING,L</option>
+<option value="Other servicers">Other servicers</option>
+<option value="PENNYMACCORP">PENNYMACCORP</option>
+<option value="PHHMTGECORP">PHHMTGECORP</option>
+<option value="PINGORALOANSERVICING">PINGORALOANSERVICING</option>
+<option value="PNCBANK,NATL">PNCBANK,NATL</option>
+<option value="PNCMTGESERVICES,INC">PNCMTGESERVICES,INC</option>
+<option value="PROVIDENTFUNDINGASSO">PROVIDENTFUNDINGASSO</option>
+<option value="QUICKENLOANINC">QUICKENLOANINC</option>
+<option value="REGIONSBANKDBAREGION">REGIONSBANKDBAREGION</option>
+<option value="RESIDENTIALCREDITSOL">RESIDENTIALCREDITSOL</option>
+<option value="ROUNDPOINTMTGESERVIC">ROUNDPOINTMTGESERVIC</option>
+<option value="RUSHMORELOANMANAGMEN">RUSHMORELOANMANAGMEN</option>
+<option value="SANTANDERBANK,NA">SANTANDERBANK,NA</option>
+<option value="SENECAMTGESERVICING,">SENECAMTGESERVICING,</option>
+<option value="SPECIALIZEDLOANSERVI">SPECIALIZEDLOANSERVI</option>
+<option value="STEARNSLENDING,LLC">STEARNSLENDING,LLC</option>
+<option value="STONEGATEMTGECORP">STONEGATEMTGECORP</option>
+<option value="SUNTRUSTMORTGAGE,INC">SUNTRUSTMORTGAGE,INC</option>
+<option value="TAYLOR,BEAN&amp;WHITAKER">TAYLOR,BEAN&amp;WHITAKER</option>
+<option value="UNIONSAVINGSBANK">UNIONSAVINGSBANK</option>
+<option value="UNITEDSHOREFINANCIAL">UNITEDSHOREFINANCIAL</option>
+<option value="USAAFEDSAVINGSBANK">USAAFEDSAVINGSBANK</option>
+<option value="USBANKNA">USBANKNA</option>
+<option value="WASHINGTONMUTUALBANK">WASHINGTONMUTUALBANK</option>
+<option value="WELLSFARGOBANK,NA">WELLSFARGOBANK,NA</option>
+
+                </select>		
+</div>
+		<div class="form-group">
+			<b>Credit Score:</b>	<input type="text" name="CreditScore" class="form-control"></br>
+		</div>
+  <div class="dropdown">
+        <h3><label for="sel1">Loan Purpose:</label></h3>
+        <select name="LoanPurpose">
+                        <option value="P">P</option>
+                        <option value="N">N</option>
+                        <option value="C">C</option>
+                </select>
+        </div>
+
+<table class="table">
+    <tbody>
+      <tr>
+        <td><input class="btn btn-primary" type="submit" name="submit" value="linearRegression"></td>
+        <td><input class="btn btn-primary" type="submit" name="submit" value="randomForest"></td>
+        <td><input class="btn btn-primary" type="submit" name="submit" value="neuralNetwork"></td>
+      </tr>
+    </tbody>
+  </table>
+{% if Status is defined %}
+<div>
+<table class="table">
+    <thead>
+      <tr>
+	<th>OriginalInterestRate</th>
+        <th>FirstTimeHomeBuyerFlag</th>
+	<th>ServicerName</th>
+	<th>CreditScore</th>
+	<th>Channel</th>
+	<th>Predicted Result</th>
+	<th>Predicted Result(Random Forest)</th>
+      </tr>
+    </thead>
+ <tbody>
+
+{% for key, value in Status.items() %}
+	{% for k, v in value.items() %}
+		 {% for items in v %}
+		<td> {{items['OriginalInterestRate']}} </td>
+		<td> {{items['FirstTimeHomeBuyerFlag']}} </td>
+		<td> {{items['ServicerName']}} </td>
+		<td> {{items['CreditScore']}} </td>
+		<td> {{items['Channel']}} </td>
+		<td> {{items['Scored Labels']}} </td>
+		<td> {{items['Scored Label Mean']}} </td>
+       		 {% endfor %}
+	{% endfor %}
+
+{% endfor %}
+{% endif %}
+</tbody>
+</table>
+</div>
+	</div>
+	</body>
+</html>
+
